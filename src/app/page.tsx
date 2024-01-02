@@ -1,42 +1,113 @@
+import Contacts from "@/components/Contacts";
 import MyCanvas from "@/components/MyCanvas";
-import * as THREE from "three";
+import About from "@/components/About";
+import ExperienceCard from "@/components/ExperienceCard";
+import EducationCard from "@/components/EducationCard";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
-        <MyCanvas />
-      </div>
-
-      <div className="mt-10">
-        <h2 className="text-3xl font-bold">Skills</h2>
-        <ul className="list-disc list-inside">
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Ruby on Rails</li>
-        </ul>
-      </div>
-
-      <div className="mt-10">
-        <h2 className="text-3xl font-bold">Projects</h2>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="card">
-            <h3 className="text-xl font-bold">Project 1</h3>
-            <p>Description of Project 1</p>
+    <div className="w-full min-h-screen bg-gradient-to-r from-slate-900 to-bg-gray-900 overflow-hidden">
+      <main className="mx-auto h-screen text-white flex max-w-screen-xl lg:flex-row flex-col justify-center items-start px-6 py-12 gap-2">
+        <div className="flex flex-col lg:w-1/2 lg:justify-between justify-start lg:h-full text-white pt-12 ">
+          <div className="flex flex-col gap-3">
+            <h1 className="text-6xl font-bold text-slate-50">
+              Francisco Silva
+            </h1>
+            <h2 className="text-2xl font-bold text-slate-50">
+              Software Engineer
+            </h2>
           </div>
-          <div className="card">
-            <h3 className="text-xl font-bold">Project 2</h3>
-            <p>Description of Project 2</p>
+          <div>
+            <div className="hidden lg:flex lg:flex-row">
+              <MyCanvas />
+              <div className="flex flex-col justify-center">
+                <h2 className="text-base font-bold text-slate-50">ABOUT</h2>
+                <h2 className="text-base font-bold text-slate-50">
+                  EXPERIENCE
+                </h2>
+                <h2 className="text-base font-bold text-slate-50">EDUCATION</h2>
+              </div>
+            </div>
           </div>
-          <div className="card">
-            <h3 className="text-xl font-bold">Project 3</h3>
-            <p>Description of Project 3</p>
+          <Contacts />
+        </div>
+        <div className="flex flex-col lg:w-1/2 items-start max-h-screen text-white py-12 rounded-lg shadow-lg transition-colors overflow-y-auto scrollbar-hide">
+          <div className="mb-16">
+            <h1 className="sticky top-0 z-20 -mx-6 mb-4 bg-gradient-to-r from-slate-900 to-bg-gray-900 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+              ABOUT
+            </h1>
+            <About />
+          </div>
+          <div className="mb-10 flex flex-col">
+            <h1 className="lg:hidden text-xl font-bold text-slate-50 mb-12">
+              EXPERIENCE
+            </h1>
+            <ExperienceCard
+              companyName="iCapital Network"
+              description="Worked as a full stack engineer on the investment Dashboard building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments."
+              period="Dec 2021 - Present"
+              technologies={[
+                "React",
+                "Redux",
+                "Ruby on Rails",
+                "PostgreSQL",
+                "AWS",
+              ]}
+            />
+            <ExperienceCard
+              companyName="The Strategy Group"
+              description="Built a Minimum Viable Product (MVP) of an AI chat system. This system is capable of integrating documents into its context, which means it can understand and respond to user queries based on the information contained in the uploaded documents."
+              period="Jun 2023 - Oct 2023 (side project)"
+              technologies={["Python", "LLM", "Llamaindex", "Streamlit"]}
+            />
+            <ExperienceCard
+              companyName="SIBS"
+              description="Backend engineer on the development of the central system of Portuguess ATMs and bank transactions."
+              period="May 2021 - Nov 2021"
+              technologies={["Java"]}
+            />
+            <ExperienceCard
+              companyName="Mobileum"
+              description="Developed bespoke revenue assurance web applications for telecommunications providers utilizing our company's internal Low-Code tool. These applications successfully identified and mitigated revenue loss for millions of prepaid customers from companies like MTN Nigeria and Entel Chile."
+              period="Jan 2018 - Aug 2020"
+              technologies={["Java", "POSTGRESQL", "Oracle SQL"]}
+            />
+            <ExperienceCard
+              companyName="UNINOVA"
+              description="Part-time researcher/developer on the development of a sentiment analysis (using IBM's Watson) web app using social network data."
+              period="Nov 2016 - Jan 2018"
+              technologies={[
+                "JavaScript",
+                "Java",
+                "REST",
+                "IBM Watson",
+                "Bootstrap",
+              ]}
+            />
+            <ExperienceCard
+              companyName="Siemens (1 month summer internship)"
+              description="Developer (SQL) in transportation and mobility section, developing the software used on Lisbon’s and Porto’s trafic light maintenance. Optimizing queries and make SLA’s calculations on traffic lights' downtime."
+              period="2014"
+              technologies={["ORACLE SQL"]}
+            />
+          </div>
+          <div className="mb-10 flex flex-col">
+            <h1 className="lg:hidden text-xl font-bold text-slate-50 mb-12">
+              EDUCATION
+            </h1>
+            <EducationCard
+              universityName="Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa"
+              degree="Post-graduation in Electrical and Computer Engineering. Completed all master's degree courses with a 15/20 average."
+              period="2011 - 2017"
+            />
+            <EducationCard
+              universityName="TU Delft (The Netherlands)"
+              degree="One year exchange program in Electrical and Computer Engineering"
+              period="2015 - 2016"
+            />
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
