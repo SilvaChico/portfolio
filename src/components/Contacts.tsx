@@ -16,7 +16,7 @@ export default function Contacts() {
         </svg>
       </a>
       <a
-        href="https://linkedin.com/in/franciscocrosilva"
+        href="https://linkedin.com/in/silvachicodev"
         target="_blank"
         rel="noopener noreferrer"
         className="transition-transform duration-150 ease-in-out transform hover:-translate-y-0.5 hover:brightness-150"
