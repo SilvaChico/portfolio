@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is my Resume built with next.js
 
-## Getting Started
+It was build using tailwind css and [three.js](https://threejs.org/) to create the 3D element.
 
-First, run the development server:
+## Run the project:
 
 ```bash
 npm run dev
@@ -14,23 +14,93 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# My Resume:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Francisco Silva
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Software Engineer
 
-## Learn More
+### ABOUT
 
-To learn more about Next.js, take a look at the following resources:
+As an experienced Full Stack Engineer with over 6 years of professional experience, I specialize in web development and have a proven track record of delivering high-quality software solutions. My journey in the tech industry has led me to work on diverse projects, ranging from developing a sentiment analysis web application using social network data to building an innovative investment dashboard for iCapital, where I currently contribute my expertise.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+One of my recent accomplishments includes collaborating with a fellow engineer to develop an MVP for an AI chat system. This system stands out for its ability to integrate documents into its context, thereby enhancing its understanding and response to user queries.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+My technical skill set, coupled with my passion for problem-solving and team collaboration, makes me a valuable asset to any team seeking a dedicated and skilled Full Stack Engineer.
 
-## Deploy on Vercel
+### EXPERIENCE
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### iCapital
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2021 - PRESENT
+
+Worked as a full stack engineer on the investment Dashboard building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments.
+
+- React
+- Redux
+- Ruby on Rails
+- PostgreSQL
+- AWS
+- Node.js
+
+#### The Strategy Group
+
+2023 (side project)
+
+Built a Minimum Viable Product (MVP) of an AI chat system. This system is capable of integrating documents into its context, which means it can understand and respond to user queries based on the information contained in the uploaded documents.
+
+- Python
+- LLM
+- Llamaindex
+- Streamlit
+
+#### SIBS
+
+2021
+
+Backend engineer on the development of the central system of Portuguess ATMs and bank transactions.
+
+- Java
+
+#### Mobileum
+
+2018 - 2020
+
+Developed bespoke revenue assurance web applications for telecommunications providers utilizing our company's internal Low-Code tool. These applications successfully identified and mitigated revenue loss for millions of prepaid customers from companies like MTN Nigeria and Entel Chile.
+
+- Java
+- POSTGRESQL
+- Oracle SQL
+
+#### UNINOVA
+
+2016 - 2018
+
+Part-time researcher/developer on the development of a sentiment analysis (using IBM's Watson) web app using social network data.
+
+- Node.js
+- React
+- IBM Watson
+- Bootstrap
+
+#### Siemens (1 month summer internship)
+
+2014
+
+Developer (SQL) in transportation and mobility section, developing the software used on Lisbon’s and Porto’s trafic light maintenance. Optimizing queries and make SLA’s calculations on traffic lights' downtime.
+
+- ORACLE SQL
+
+### EDUCATION
+
+#### Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa
+
+2011 - 2017
+
+Post-graduation in Electrical and Computer Engineering. Completed all master's degree courses with a 15/20 average.
+
+#### TU Delft (The Netherlands)
+
+2015 - 2016
+
+One year exchange program in Electrical and Computer Engineering
