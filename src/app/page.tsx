@@ -3,47 +3,121 @@ import MyCanvas from "@/components/MyCanvas";
 import About from "@/components/About";
 import ExperienceCard from "@/components/ExperienceCard";
 import EducationCard from "@/components/EducationCard";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-r from-slate-900 to-bg-gray-900 overflow-hidden">
-      <main className="mx-auto h-screen text-white flex max-w-screen-xl lg:flex-row flex-col justify-center items-start px-6 py-12 gap-2">
-        <div className="flex flex-col lg:w-1/2 lg:justify-between justify-start lg:h-full text-white pt-12 ">
-          <div className="flex flex-col gap-3">
-            <h1 className="text-6xl font-bold text-slate-50">
-              Francisco Silva
-            </h1>
-            <h2 className="text-2xl font-bold text-slate-50">
-              Software Engineer
-            </h2>
+    <>
+      <Navbar />
+
+      {/* Hero */}
+      <section
+        id="hero"
+        className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      >
+        {/* Background decorations */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-violet-600/10 blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-cyan-500/8 blur-3xl" />
+        </div>
+
+        <div className="max-w-screen-xl mx-auto px-6 pt-24 pb-16 w-full flex flex-col lg:flex-row items-center gap-12">
+          {/* Text content */}
+          <div className="flex-1 flex flex-col gap-6 fade-up">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/20 bg-cyan-500/5 w-fit">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+              <span className="text-cyan-400 text-xs font-medium tracking-wider">
+                AVAILABLE FOR OPPORTUNITIES
+              </span>
+            </div>
+            <div>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
+                Francisco
+                <br />
+                <span className="gradient-text">Silva</span>
+              </h1>
+              <p className="mt-4 text-xl sm:text-2xl text-slate-400 font-light">
+                Full Stack Engineer
+              </p>
+            </div>
+            <p className="text-slate-500 text-base max-w-md leading-relaxed">
+              6+ years building scalable web applications. Passionate about
+              clean code, great UX and the intersection of technology and
+              business.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-2">
+              <a
+                href="#experience"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-medium text-sm hover:opacity-90 transition-opacity glow-cyan"
+              >
+                View Experience
+              </a>
+              <a
+                href="#contact"
+                className="px-6 py-3 rounded-full border border-white/10 text-slate-300 font-medium text-sm hover:border-white/30 hover:text-white transition-all"
+              >
+                Get in touch
+              </a>
+            </div>
           </div>
-          <div>
-            <div className="hidden lg:flex lg:flex-row">
+
+          {/* 3D Canvas */}
+          <div className="hidden lg:flex items-center justify-center">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-cyan-500/10 blur-2xl" />
               <MyCanvas />
             </div>
           </div>
-          <Contacts />
         </div>
-        <div className="flex flex-col lg:w-1/2 items-start max-h-screen text-white py-12 rounded-lg shadow-lg transition-colors overflow-y-auto scrollbar-hide">
-          <div className="mb-16">
-            <h1 className="text-xl font-bold text-slate-50 mb-12">ABOUT</h1>
+
+        {/* Scroll indicator */}
+        <a
+          href="#about"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-600 hover:text-slate-400 transition-colors"
+        >
+          <span className="text-xs tracking-widest">SCROLL</span>
+          <svg
+            className="w-4 h-4 animate-bounce"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </a>
+      </section>
+
+      {/* About */}
+      <section id="about" className="py-24">
+        <div className="max-w-screen-xl mx-auto px-6">
+          <SectionHeader number="01" title="About Me" />
+          <div className="mt-10 max-w-2xl">
             <About />
           </div>
-          <div className="mb-10 flex flex-col">
-            <h1 className="text-xl font-bold text-slate-50 mb-12">
-              EXPERIENCE
-            </h1>
+        </div>
+      </section>
+
+      {/* Experience */}
+      <section id="experience" className="py-24">
+        <div className="max-w-screen-xl mx-auto px-6">
+          <SectionHeader number="02" title="Experience" />
+          <div className="mt-10 flex flex-col max-w-2xl">
             <ExperienceCard
               companyName="iCapital"
               description="Worked as a full stack engineer on the investment Dashboard building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments."
-              period="2021 - PRESENT"
+              period="2021 – PRESENT"
               technologies={[
                 "React",
                 "Redux",
                 "Ruby on Rails",
                 "PostgreSQL",
                 "AWS",
-                "node.js",
+                "Node.js",
               ]}
             />
             <ExperienceCard
@@ -61,42 +135,87 @@ export default function Home() {
             <ExperienceCard
               companyName="Mobileum"
               description="Developed bespoke revenue assurance web applications for telecommunications providers utilizing our company's internal Low-Code tool. These applications successfully identified and mitigated revenue loss for millions of prepaid customers from companies like MTN Nigeria and Entel Chile."
-              period="2018 - 2020"
-              technologies={["Java", "POSTGRESQL", "Oracle SQL"]}
+              period="2018 – 2020"
+              technologies={["Java", "PostgreSQL", "Oracle SQL"]}
             />
             <ExperienceCard
               companyName="UNINOVA"
               description="Part-time researcher/developer on the development of a sentiment analysis (using IBM's Watson) web app using social network data."
-              period="2016 - 2018"
-              technologies={[
-                "Node.js",
-                "React",
-                "IBM Watson",
-                "Bootstrap",
-              ]}
+              period="2016 – 2018"
+              technologies={["Node.js", "React", "IBM Watson", "Bootstrap"]}
             />
             <ExperienceCard
-              companyName="Siemens (1 month summer internship)"
-              description="Developer (SQL) in transportation and mobility section, developing the software used on Lisbon’s and Porto’s trafic light maintenance. Optimizing queries and make SLA’s calculations on traffic lights' downtime."
+              companyName="Siemens"
+              description="1-month summer internship. Developer (SQL) in transportation and mobility section, developing the software used on Lisbon's and Porto's traffic light maintenance. Optimizing queries and making SLA calculations on traffic lights' downtime."
               period="2014"
-              technologies={["ORACLE SQL"]}
-            />
-          </div>
-          <div className="mb-10 flex flex-col">
-            <h1 className="text-xl font-bold text-slate-50 mb-12">EDUCATION</h1>
-            <EducationCard
-              universityName="Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa"
-              degree="Post-graduation in Electrical and Computer Engineering. Completed all master's degree courses with a 15/20 average."
-              period="2011 - 2017"
-            />
-            <EducationCard
-              universityName="TU Delft (The Netherlands)"
-              degree="One year exchange program in Electrical and Computer Engineering"
-              period="2015 - 2016"
+              technologies={["Oracle SQL"]}
             />
           </div>
         </div>
-      </main>
+      </section>
+
+      {/* Education */}
+      <section id="education" className="py-24">
+        <div className="max-w-screen-xl mx-auto px-6">
+          <SectionHeader number="03" title="Education" />
+          <div className="mt-10 flex flex-col max-w-2xl">
+            <EducationCard
+              universityName="Faculdade de Ciências e Tecnologia — Universidade Nova de Lisboa"
+              degree="Post-graduation in Electrical and Computer Engineering. Completed all master's degree courses with a 15/20 average."
+              period="2011 – 2017"
+            />
+            <EducationCard
+              universityName="TU Delft (The Netherlands)"
+              degree="One year exchange program in Electrical and Computer Engineering."
+              period="2015 – 2016"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-24">
+        <div className="max-w-screen-xl mx-auto px-6">
+          <SectionHeader number="04" title="Get in Touch" />
+          <p className="mt-4 text-slate-400 text-sm max-w-sm">
+            Open to new opportunities and collaborations. Feel free to reach
+            out!
+          </p>
+          <div className="mt-10 max-w-sm">
+            <Contacts />
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/5 py-8">
+        <div className="max-w-screen-xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-slate-600 text-xs">
+            © {new Date().getFullYear()} Francisco Silva. All rights reserved.
+          </p>
+          <p className="text-slate-600 text-xs">
+            Built with{" "}
+            <span className="text-slate-500">Next.js &amp; Tailwind CSS</span>
+          </p>
+        </div>
+      </footer>
+    </>
+  );
+}
+
+function SectionHeader({
+  number,
+  title,
+}: {
+  number: string;
+  title: string;
+}) {
+  return (
+    <div className="flex items-center gap-4">
+      <span className="text-xs font-mono text-cyan-500/60">{number}</span>
+      <div className="h-px flex-1 max-w-[40px] bg-cyan-500/20" />
+      <h2 className="text-2xl font-bold text-white">{title}</h2>
+      <div className="h-px flex-1 bg-white/5" />
     </div>
   );
 }
