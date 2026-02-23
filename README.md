@@ -62,6 +62,16 @@ Backend engineer on the development of the central system of Portuguess ATMs and
 
 - Java
 
+#### CIPSH
+
+2020 - 2021
+
+Supported the incremental migration of a large mainframe system to cloud infrastructure while maintaining ongoing operations for a complex platform.
+
+- Mainframe
+- Cloud infrastructure
+- Legacy modernization
+
 #### Mobileum
 
 2018 - 2020

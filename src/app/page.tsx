@@ -59,6 +59,16 @@ export default function Home() {
               technologies={["Java"]}
             />
             <ExperienceCard
+              companyName="CIPSH"
+              description="Supported the incremental migration of a large mainframe system to cloud infrastructure while maintaining ongoing operations for a complex platform."
+              period="2020 - 2021"
+              technologies={[
+                "Mainframe",
+                "Cloud infrastructure",
+                "Legacy modernization",
+              ]}
+            />
+            <ExperienceCard
               companyName="Mobileum"
               description="Developed bespoke revenue assurance web applications for telecommunications providers utilizing our company's internal Low-Code tool. These applications successfully identified and mitigated revenue loss for millions of prepaid customers from companies like MTN Nigeria and Entel Chile."
               period="2018 - 2020"
