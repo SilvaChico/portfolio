@@ -10,14 +10,16 @@ export default function EducationCard({
   period,
 }: EducationCardProps) {
   return (
-    <div className="grid grid-cols-[1fr,3fr] my-8">
-      <div className="text-slate-400 text-sm">
-        <p className="">{period}</p>
+    <div className="group glass-card rounded-xl p-5 mb-4 cursor-default">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+        <h3 className="font-semibold text-slate-100 group-hover:text-cyan-300 transition-colors">
+          {universityName}
+        </h3>
+        <span className="text-xs text-slate-500 font-mono whitespace-nowrap sm:ml-4 mt-0.5 shrink-0">
+          {period}
+        </span>
       </div>
-      <div>
-        <p>{universityName}</p>
-        <p className="text-sm text-slate-400">{degree}</p>
-      </div>
+      <p className="text-sm text-slate-400 leading-relaxed">{degree}</p>
     </div>
   );
 }
