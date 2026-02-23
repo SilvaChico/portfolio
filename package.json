@@ -15,6 +15,9 @@
     "react-dom": "^18",
     "three": "^0.159.0"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
