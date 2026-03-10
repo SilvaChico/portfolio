@@ -4,13 +4,17 @@ export default function About() {
       <p>
         As an experienced{" "}
         <span className="text-cyan-400 font-medium">Full Stack Engineer</span>{" "}
-        with over 6 years of professional experience, I specialize in web
+        with over 8 years of professional experience, I specialize in web
         development and have a proven track record of delivering high-quality
         software solutions. My journey in the tech industry has led me to work
-        on diverse projects, ranging from developing a sentiment analysis web
-        application using social network data to building an innovative
-        investment dashboard for iCapital, where I currently contribute my
-        expertise.
+        across mobility, fintech, telecommunications, and research-driven
+        products. I currently contribute at{" "}
+        <span className="text-violet-400 font-medium">
+          Volkswagen Group Digital Solutions
+        </span>
+        , after previously helping build an investment dashboard for iCapital
+        and earlier products ranging from sentiment analysis using social
+        network data to revenue assurance platforms.
       </p>
       <p>
         One of my recent accomplishments includes collaborating with a fellow
