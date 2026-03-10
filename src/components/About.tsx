@@ -3,8 +3,8 @@ export default function About() {
     <div className="flex flex-col gap-5 text-slate-300 leading-relaxed text-[15px]">
       <p>
         As an experienced{" "}
-        <span className="text-cyan-400 font-medium">Full Stack Engineer</span>{" "}
-        with over 8 years of professional experience, I specialize in web
+        <span className="text-cyan-400 font-medium">Software Engineer</span>{" "}
+        with 10 years of professional experience, I specialize in web
         development and have a proven track record of delivering high-quality
         software solutions. My journey in the tech industry has led me to work
         across mobility, fintech, telecommunications, and research-driven
@@ -12,9 +12,12 @@ export default function About() {
         <span className="text-violet-400 font-medium">
           Volkswagen Group Digital Solutions
         </span>
-        , after previously helping build an investment dashboard for iCapital
-        and earlier products ranging from sentiment analysis using social
-        network data to revenue assurance platforms.
+        , where I build software for factories on a logistics platform that
+        helps determine which parts are needed for each car and ensures the
+        right components reach the right vehicle in production. Before that, I
+        helped build an investment dashboard for iCapital and earlier products
+        ranging from sentiment analysis using social network data to revenue
+        assurance platforms.
       </p>
       <p>
         One of my recent accomplishments includes collaborating with a fellow
@@ -28,18 +31,16 @@ export default function About() {
         My technical skill set, coupled with my passion for{" "}
         <span className="text-cyan-400 font-medium">problem-solving</span> and
         team collaboration, makes me a valuable asset to any team seeking a
-        dedicated and skilled Full Stack Engineer.
+        dedicated and skilled Software Engineer.
       </p>
       <div className="flex flex-wrap gap-2 mt-2">
         {[
-          "React",
-          "TypeScript",
-          "Ruby on Rails",
-          "Node.js",
-          "PostgreSQL",
+          "Java",
           "AWS",
+          "Angular",
+          "Kotlin",
           "Python",
-          "Redux",
+          "Spark",
         ].map((skill) => (
           <span
             key={skill}

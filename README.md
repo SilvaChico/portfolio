@@ -22,11 +22,11 @@ bun dev
 
 ### ABOUT
 
-As an experienced Full Stack Engineer with over 8 years of professional experience, I specialize in web development and have a proven track record of delivering high-quality software solutions. My journey in the tech industry has led me to work across mobility, fintech, telecommunications, and research-driven products. I currently contribute at Volkswagen Group Digital Solutions, after previously helping build an investment dashboard for iCapital and earlier products ranging from sentiment analysis using social network data to revenue assurance platforms.
+As an experienced Software Engineer with 10 years of professional experience, I specialize in web development and have a proven track record of delivering high-quality software solutions. My journey in the tech industry has led me to work across mobility, fintech, telecommunications, and research-driven products. I currently contribute at Volkswagen Group Digital Solutions, where I build software for factories on a logistics platform that helps determine which parts are needed for each car and ensures the right components reach the right vehicle in production. Before that, I helped build an investment dashboard for iCapital and earlier products ranging from sentiment analysis using social network data to revenue assurance platforms.
 
 One of my recent accomplishments includes collaborating with a fellow engineer to develop an MVP for an AI chat system. This system stands out for its ability to integrate documents into its context, thereby enhancing its understanding and response to user queries.
 
-My technical skill set, coupled with my passion for problem-solving and team collaboration, makes me a valuable asset to any team seeking a dedicated and skilled Full Stack Engineer.
+My technical skill set, coupled with my passion for problem-solving and team collaboration, makes me a valuable asset to any team seeking a dedicated and skilled Software Engineer.
 
 ### EXPERIENCE
 
@@ -34,13 +34,20 @@ My technical skill set, coupled with my passion for problem-solving and team col
 
 2025 - PRESENT
 
-Working as a Full Stack Engineer on digital products and internal platforms, contributing across frontend and backend systems with a strong focus on maintainability, scalability, and user experience.
+Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production.
+
+- Java
+- AWS
+- Angular
+- Kotlin
+- Python
+- Spark
 
 #### iCapital
 
 2021 - 2025
 
-Worked as a full stack engineer on the investment Dashboard building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments.
+Worked as a software engineer on the investment dashboard, building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments.
 
 - React
 - Redux

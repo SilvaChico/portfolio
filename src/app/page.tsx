@@ -37,13 +37,13 @@ export default function Home() {
                 <span className="gradient-text">Silva</span>
               </h1>
               <p className="mt-4 text-xl sm:text-2xl text-slate-400 font-light">
-                Full Stack Engineer
+                Software Engineer
               </p>
             </div>
             <p className="text-slate-500 text-base max-w-md leading-relaxed">
-              8+ years building scalable web applications, currently at
-              Volkswagen Group Digital Solutions. Passionate about clean code,
-              great UX and the intersection of technology and business.
+              10 years building software products, currently developing factory
+              logistics platforms at Volkswagen Group Digital Solutions to get
+              the right parts into the right car at the right time.
             </p>
             <div className="flex flex-wrap gap-4 mt-2">
               <a
@@ -109,12 +109,20 @@ export default function Home() {
           <div className="mt-10 flex flex-col max-w-2xl">
             <ExperienceCard
               companyName="Volkswagen Group Digital Solutions"
-              description="Working as a Full Stack Engineer on digital products and internal platforms, contributing across frontend and backend systems with a strong focus on maintainability, scalability, and user experience."
+              description="Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production."
               period="2025 – PRESENT"
+              technologies={[
+                "Java",
+                "AWS",
+                "Angular",
+                "Kotlin",
+                "Python",
+                "Spark",
+              ]}
             />
             <ExperienceCard
               companyName="iCapital"
-              description="Worked as a full stack engineer on the investment Dashboard building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments."
+              description="Worked as a software engineer on the investment dashboard, building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments."
               period="2021 – 2025"
               technologies={[
                 "React",
