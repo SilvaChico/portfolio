@@ -12,11 +12,14 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg-dark);
+  overscroll-behavior-y: none;
 }
 
 body {
   color: #f1f5f9;
   background-color: var(--bg-dark);
+  min-height: 100%;
 }
 
 /* Scrollbar */
@@ -123,6 +126,20 @@ body {
 .nav-blur {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+}
+
+.nav-shell {
+  background: rgba(6, 6, 15, 0.6);
+  border-bottom: 1px solid transparent;
+  backface-visibility: hidden;
+  isolation: isolate;
+  transform: translateZ(0);
+  will-change: padding, background-color, border-color, box-shadow;
+}
+
+.nav-shell[data-scrolled="true"] {
+  background: rgba(6, 6, 15, 0.82);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Dot decoration */
