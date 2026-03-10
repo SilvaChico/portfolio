@@ -21,10 +21,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "nav-blur bg-[#06060f]/80 border-b border-white/5 py-3"
-          : "py-5"
+      data-scrolled={scrolled}
+      className={`nav-shell nav-blur fixed top-0 left-0 right-0 z-50 transition-[padding,background-color,border-color,box-shadow] duration-300 ${
+        scrolled ? "py-3 shadow-[0_12px_40px_rgba(6,6,15,0.24)]" : "py-5"
       }`}
     >
       <nav className="max-w-screen-xl mx-auto px-6 flex items-center justify-between">
