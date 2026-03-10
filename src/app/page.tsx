@@ -27,7 +27,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/20 bg-cyan-500/5 w-fit">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-cyan-400 text-xs font-medium tracking-wider">
-                AVAILABLE FOR OPPORTUNITIES
+                VOLKSWAGEN GROUP DIGITAL SOLUTIONS
               </span>
             </div>
             <div>
@@ -37,13 +37,14 @@ export default function Home() {
                 <span className="gradient-text">Silva</span>
               </h1>
               <p className="mt-4 text-xl sm:text-2xl text-slate-400 font-light">
-                Full Stack Engineer
+                Software Engineer
               </p>
             </div>
             <p className="text-slate-500 text-base max-w-md leading-relaxed">
-              6+ years building scalable web applications. Passionate about
-              clean code, great UX and the intersection of technology and
-              business.
+              10 years building software products, currently developing factory
+              logistics platforms at Volkswagen Group Digital Solutions to get
+              the right parts into the right car at the right time across 100+
+              factories in 27 countries.
             </p>
             <div className="flex flex-wrap gap-4 mt-2">
               <a
@@ -108,9 +109,22 @@ export default function Home() {
           <SectionHeader number="02" title="Experience" />
           <div className="mt-10 flex flex-col max-w-2xl">
             <ExperienceCard
+              companyName="Volkswagen Group Digital Solutions"
+              description="Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production, supporting more than 100 factories across 27 countries."
+              period="2025 – PRESENT"
+              technologies={[
+                "Java",
+                "AWS",
+                "Angular",
+                "Kotlin",
+                "Python",
+                "Spark",
+              ]}
+            />
+            <ExperienceCard
               companyName="iCapital"
-              description="Worked as a full stack engineer on the investment Dashboard building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments."
-              period="2021 – PRESENT"
+              description="Worked as a software engineer on the investment dashboard, building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments."
+              period="2021 – 2025"
               technologies={[
                 "React",
                 "Redux",
@@ -128,7 +142,7 @@ export default function Home() {
             />
             <ExperienceCard
               companyName="SIBS"
-              description="Backend engineer on the development of the central system of Portuguess ATMs and bank transactions."
+              description="Backend engineer on the development of the central system of Portuguese ATMs and bank transactions."
               period="2021"
               technologies={["Java"]}
             />

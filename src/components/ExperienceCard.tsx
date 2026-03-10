@@ -2,7 +2,7 @@ type ExperienceCardProps = {
   companyName: string;
   description: string;
   period: string;
-  technologies: string[];
+  technologies?: string[];
 };
 
 export default function ExperienceCard({
@@ -22,16 +22,18 @@ export default function ExperienceCard({
         </span>
       </div>
       <p className="text-sm text-slate-400 leading-relaxed mb-4">{description}</p>
-      <div className="flex flex-wrap gap-2">
-        {technologies.map((technology, index) => (
-          <span
-            key={index}
-            className="inline-flex items-center rounded-full bg-violet-500/10 px-2.5 py-0.5 text-xs font-medium text-violet-300 border border-violet-500/20 hover:bg-violet-500/20 transition-colors"
-          >
-            {technology}
-          </span>
-        ))}
-      </div>
+      {technologies?.length ? (
+        <div className="flex flex-wrap gap-2">
+          {technologies.map((technology, index) => (
+            <span
+              key={index}
+              className="inline-flex items-center rounded-full bg-violet-500/10 px-2.5 py-0.5 text-xs font-medium text-violet-300 border border-violet-500/20 hover:bg-violet-500/20 transition-colors"
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 }

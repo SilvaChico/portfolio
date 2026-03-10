@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Francisco Silva · Software Engineer",
   description:
-    "Full Stack Engineer with 6+ years of experience. Specializing in React, Ruby on Rails, and modern web technologies.",
+    "Software Engineer with 10 years of experience, currently building factory logistics software at Volkswagen Group Digital Solutions for 100+ factories across 27 countries.",
 };
 
 export default function RootLayout({

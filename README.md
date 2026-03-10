@@ -22,19 +22,32 @@ bun dev
 
 ### ABOUT
 
-As an experienced Full Stack Engineer with over 6 years of professional experience, I specialize in web development and have a proven track record of delivering high-quality software solutions. My journey in the tech industry has led me to work on diverse projects, ranging from developing a sentiment analysis web application using social network data to building an innovative investment dashboard for iCapital, where I currently contribute my expertise.
+As an experienced Software Engineer with 10 years of professional experience, I specialize in web development and have a proven track record of delivering high-quality software solutions. My journey in the tech industry has led me to work across mobility, fintech, telecommunications, and research-driven products. I currently contribute at Volkswagen Group Digital Solutions, where I build software for factories on a logistics platform that helps determine which parts are needed for each car and ensures the right components reach the right vehicle in production, supporting more than 100 factories across 27 countries in Europe and other global regions. Before that, I helped build an investment dashboard for iCapital and earlier products ranging from sentiment analysis using social network data to revenue assurance platforms.
 
 One of my recent accomplishments includes collaborating with a fellow engineer to develop an MVP for an AI chat system. This system stands out for its ability to integrate documents into its context, thereby enhancing its understanding and response to user queries.
 
-My technical skill set, coupled with my passion for problem-solving and team collaboration, makes me a valuable asset to any team seeking a dedicated and skilled Full Stack Engineer.
+My technical skill set, coupled with my passion for problem-solving and team collaboration, makes me a valuable asset to any team seeking a dedicated and skilled Software Engineer.
 
 ### EXPERIENCE
 
+#### Volkswagen Group Digital Solutions
+
+2025 - PRESENT
+
+Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production, supporting more than 100 factories across 27 countries.
+
+- Java
+- AWS
+- Angular
+- Kotlin
+- Python
+- Spark
+
 #### iCapital
 
-2021 - PRESENT
+2021 - 2025
 
-Worked as a full stack engineer on the investment Dashboard building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments.
+Worked as a software engineer on the investment dashboard, building new features and improving existing ones. This dashboard is used by advisors to manage their clients' investments.
 
 - React
 - Redux
@@ -58,7 +71,7 @@ Built a Minimum Viable Product (MVP) of an AI chat system. This system is capabl
 
 2021
 
-Backend engineer on the development of the central system of Portuguess ATMs and bank transactions.
+Backend engineer on the development of the central system of Portuguese ATMs and bank transactions.
 
 - Java
 
