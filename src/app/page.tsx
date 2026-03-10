@@ -43,7 +43,8 @@ export default function Home() {
             <p className="text-slate-500 text-base max-w-md leading-relaxed">
               10 years building software products, currently developing factory
               logistics platforms at Volkswagen Group Digital Solutions to get
-              the right parts into the right car at the right time.
+              the right parts into the right car at the right time across 100+
+              factories in 27 countries.
             </p>
             <div className="flex flex-wrap gap-4 mt-2">
               <a
@@ -109,7 +110,7 @@ export default function Home() {
           <div className="mt-10 flex flex-col max-w-2xl">
             <ExperienceCard
               companyName="Volkswagen Group Digital Solutions"
-              description="Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production."
+              description="Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production, supporting more than 100 factories across 27 countries."
               period="2025 – PRESENT"
               technologies={[
                 "Java",

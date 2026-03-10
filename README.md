@@ -22,7 +22,7 @@ bun dev
 
 ### ABOUT
 
-As an experienced Software Engineer with 10 years of professional experience, I specialize in web development and have a proven track record of delivering high-quality software solutions. My journey in the tech industry has led me to work across mobility, fintech, telecommunications, and research-driven products. I currently contribute at Volkswagen Group Digital Solutions, where I build software for factories on a logistics platform that helps determine which parts are needed for each car and ensures the right components reach the right vehicle in production. Before that, I helped build an investment dashboard for iCapital and earlier products ranging from sentiment analysis using social network data to revenue assurance platforms.
+As an experienced Software Engineer with 10 years of professional experience, I specialize in web development and have a proven track record of delivering high-quality software solutions. My journey in the tech industry has led me to work across mobility, fintech, telecommunications, and research-driven products. I currently contribute at Volkswagen Group Digital Solutions, where I build software for factories on a logistics platform that helps determine which parts are needed for each car and ensures the right components reach the right vehicle in production, supporting more than 100 factories across 27 countries in Europe and other global regions. Before that, I helped build an investment dashboard for iCapital and earlier products ranging from sentiment analysis using social network data to revenue assurance platforms.
 
 One of my recent accomplishments includes collaborating with a fellow engineer to develop an MVP for an AI chat system. This system stands out for its ability to integrate documents into its context, thereby enhancing its understanding and response to user queries.
 
@@ -34,7 +34,7 @@ My technical skill set, coupled with my passion for problem-solving and team col
 
 2025 - PRESENT
 
-Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production.
+Building software for factories on a logistics platform that calculates which parts are required for each car and helps ensure the right components reach the right vehicle throughout production, supporting more than 100 factories across 27 countries.
 
 - Java
 - AWS

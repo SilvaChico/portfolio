@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Francisco Silva · Software Engineer",
   description:
-    "Software Engineer with 10 years of experience, currently building factory logistics software at Volkswagen Group Digital Solutions using Java, Kotlin, Angular, Python, Spark, and AWS.",
+    "Software Engineer with 10 years of experience, currently building factory logistics software at Volkswagen Group Digital Solutions for 100+ factories across 27 countries.",
 };
 
 export default function RootLayout({

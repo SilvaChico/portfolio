@@ -14,10 +14,11 @@ export default function About() {
         </span>
         , where I build software for factories on a logistics platform that
         helps determine which parts are needed for each car and ensures the
-        right components reach the right vehicle in production. Before that, I
-        helped build an investment dashboard for iCapital and earlier products
-        ranging from sentiment analysis using social network data to revenue
-        assurance platforms.
+        right components reach the right vehicle in production, supporting more
+        than 100 factories across 27 countries in Europe and other global
+        regions. Before that, I helped build an investment dashboard for
+        iCapital and earlier products ranging from sentiment analysis using
+        social network data to revenue assurance platforms.
       </p>
       <p>
         One of my recent accomplishments includes collaborating with a fellow
