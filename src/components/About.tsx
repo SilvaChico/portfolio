@@ -21,12 +21,18 @@ export default function About() {
         social network data to revenue assurance platforms.
       </p>
       <p>
-        One of my recent accomplishments includes collaborating with a fellow
-        engineer to develop an MVP for an{" "}
-        <span className="text-violet-400 font-medium">AI chat system</span>.
-        This system stands out for its ability to integrate documents into its
-        context, thereby enhancing its understanding and response to user
-        queries.
+        Outside of my full-time work, I&apos;ve been building{" "}
+        <a
+          href="https://www.fruitball.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-violet-400 font-medium hover:text-violet-300 transition-colors"
+        >
+          Fruitball
+        </a>
+        , an ongoing side project that helps football groups organize weekly
+        matches through WhatsApp with RSVPs, pitch payment tracking, MVP voting,
+        and team management in a companion application.
       </p>
       <p>
         My technical skill set, coupled with my passion for{" "}

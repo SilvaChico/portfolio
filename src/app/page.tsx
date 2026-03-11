@@ -1,9 +1,9 @@
 import Contacts from "@/components/Contacts";
-import MyCanvas from "@/components/MyCanvas";
 import About from "@/components/About";
 import ExperienceCard from "@/components/ExperienceCard";
 import EducationCard from "@/components/EducationCard";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,9 +21,9 @@ export default function Home() {
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-cyan-500/8 blur-3xl" />
         </div>
 
-        <div className="max-w-screen-xl mx-auto px-6 pt-24 pb-16 w-full flex flex-col lg:flex-row items-center gap-12">
+        <div className="max-w-screen-xl mx-auto px-6 pt-24 pb-16 w-full">
           {/* Text content */}
-          <div className="flex-1 flex flex-col gap-6 fade-up">
+          <div className="max-w-3xl flex flex-col gap-6 fade-up">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/20 bg-cyan-500/5 w-fit">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-cyan-400 text-xs font-medium tracking-wider">
@@ -46,6 +46,49 @@ export default function Home() {
               the right parts into the right car at the right time across 100+
               factories in 27 countries.
             </p>
+            <div className="flex flex-col gap-3 lg:gap-4">
+              <span className="text-[11px] font-medium uppercase tracking-[0.35em] text-emerald-300/70">
+                Working On
+              </span>
+              <a
+                id="fruitball-card"
+                href="https://www.fruitball.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="group flex w-full max-w-sm items-center gap-4 rounded-2xl border border-emerald-300/20 bg-emerald-300/[0.07] px-4 py-3 shadow-[0_20px_50px_rgba(16,185,129,0.12)] transition-all hover:-translate-y-0.5 hover:border-emerald-200/40 hover:bg-emerald-300/[0.11] lg:max-w-md"
+              >
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-black/20">
+                  <Image
+                    src="/fruitball-logo.svg"
+                    alt="Fruitball logo"
+                    width={40}
+                    height={40}
+                    className="h-10 w-10"
+                  />
+                </div>
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="text-base font-semibold text-white sm:text-lg">
+                    Fruitball
+                  </span>
+                  <span className="rounded-full border border-emerald-200/20 bg-emerald-200/10 px-2 py-1 text-[10px] font-medium uppercase tracking-[0.25em] text-emerald-100/80">
+                    App
+                  </span>
+                </div>
+                <svg
+                  className="ml-auto h-5 w-5 shrink-0 text-emerald-200/80 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.8}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </a>
+            </div>
             <div className="flex flex-wrap gap-4 mt-2">
               <a
                 href="#experience"
@@ -59,14 +102,6 @@ export default function Home() {
               >
                 Get in touch
               </a>
-            </div>
-          </div>
-
-          {/* 3D Canvas */}
-          <div className="hidden lg:flex items-center justify-center">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-cyan-500/10 blur-2xl" />
-              <MyCanvas />
             </div>
           </div>
         </div>
