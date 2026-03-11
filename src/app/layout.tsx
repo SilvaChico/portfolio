@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import FloatingFootball from "@/components/FloatingFootball";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="mesh-bg min-h-screen font-sans antialiased">
         {children}
+        <FloatingFootball />
       </body>
     </html>
   );
