@@ -1,109 +1,42 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Education", href: "#education" },
+  { label: "Work", href: "#work" },
+  { label: "Fit", href: "#fit" },
+  { label: "Career", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      data-scrolled={scrolled}
-      className={`nav-shell nav-blur fixed top-0 left-0 right-0 z-50 transition-[padding,background-color,border-color,box-shadow] duration-300 ${
-        scrolled ? "py-3 shadow-[0_12px_40px_rgba(6,6,15,0.24)]" : "py-5"
-      }`}
-    >
-      <nav className="max-w-screen-xl mx-auto px-6 flex items-center justify-between">
-        <a
-          href="#hero"
-          className="text-white font-bold text-lg tracking-tight hover:opacity-80 transition-opacity"
-        >
-          <span className="gradient-text">FS</span>
-          <span className="text-slate-400 text-sm ml-2 font-normal hidden sm:inline">
-            / Francisco Silva
-          </span>
+    <header className="sticky top-0 z-50 border-b border-[color:var(--line)] bg-[rgba(244,239,230,0.88)] backdrop-blur-sm">
+      <nav className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-4 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <a href="#top" className="space-y-1">
+          <p className="type-mono text-[11px] text-[color:var(--accent)]">
+            Francisco Silva
+          </p>
+          <p className="text-sm text-[color:var(--ink-soft)]">
+            Software engineer
+          </p>
         </a>
 
-        {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-8">
+        <div className="flex items-center gap-5 overflow-x-auto pb-1 text-sm text-[color:var(--ink-soft)] lg:pb-0">
           {NAV_LINKS.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} className="nav-link text-sm font-medium">
-                {link.label}
-              </a>
-            </li>
-          ))}
-          <li>
             <a
-              href="mailto:franciscocrosilva@gmail.com"
-              className="px-4 py-2 rounded-full border border-cyan-500/40 text-cyan-400 text-sm font-medium hover:bg-cyan-500/10 hover:border-cyan-400 transition-all duration-200"
+              key={link.href}
+              href={link.href}
+              className="inline-link whitespace-nowrap"
             >
-              Hire me
+              {link.label}
             </a>
-          </li>
-        </ul>
+          ))}
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden text-slate-400 hover:text-white transition-colors p-1"
-          onClick={() => setMenuOpen((v) => !v)}
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
+          <a
+            href="mailto:franciscocrosilva@gmail.com"
+            className="focus-ring ml-auto shrink-0 border border-[color:var(--line-strong)] px-4 py-2 font-medium text-[color:var(--ink)] transition-colors duration-200 hover:border-[color:var(--ink)] lg:ml-3"
           >
-            {menuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
-      </nav>
-
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden nav-blur bg-[#06060f]/95 border-t border-white/5 px-6 py-4">
-          <ul className="flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="text-slate-300 hover:text-cyan-400 transition-colors text-sm font-medium"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+            Email
+          </a>
         </div>
-      )}
+      </nav>
     </header>
   );
 }

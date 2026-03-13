@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
-import FloatingFootball from "@/components/FloatingFootball";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Francisco Silva · Software Engineer",
+  title: "Francisco Silva | Software Engineer",
   description:
-    "Software Engineer with 10 years of experience, currently building factory logistics software at Volkswagen Group Digital Solutions for 100+ factories across 27 countries.",
+    "Portfolio of Francisco Silva, a software engineer with 10 years of experience across large-scale systems and product work, currently building factory logistics software at Volkswagen Group Digital Solutions.",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="mesh-bg min-h-screen font-sans antialiased">
-        {children}
-        <FloatingFootball />
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
